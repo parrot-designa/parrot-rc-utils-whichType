@@ -1,12 +1,12 @@
 {
   "name": "@parrotjs/rc-helper-type",
   "version": "0.0.1",
-  "description": "一个库可以判断多种数据类型", 
+  "description": "一个库可以判断多种数据类型",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/types",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/parrot-designa/parrot-rc-utils-whichType/issues"
   },
-  "homepage": "https://github.com/parrot-designa/parrot-rc-utils-whichType#readme"
+  "homepage": "https://github.com/parrot-designa/parrot-rc-utils-whichType#readme",
+  "devDependencies": {
+    "rollup": "^2.48.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "^4.2.4"
+  }
 }
